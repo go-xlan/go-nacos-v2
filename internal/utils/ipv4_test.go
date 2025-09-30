@@ -6,8 +6,9 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestGetIpv4(t *testing.T) {
-	ipv4, err := GetIpv4()
+func TestGetIPv4(t *testing.T) {
+	ipv4, err := GetIPv4()
 	require.NoError(t, err)
+	require.NotEmpty(t, ipv4)
 	t.Log(ipv4)
 }
